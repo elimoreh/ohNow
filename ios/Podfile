@@ -1,0 +1,5 @@
+platform :ios, ‘10.3.3’
+use_frameworks!
+   target ‘RNapi’ do
+   pod ‘AgoraRtcEngine_iOS’
+end
