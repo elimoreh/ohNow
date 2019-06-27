@@ -1,6 +1,6 @@
 Oh now! It's the dating app of the future!
 
 ## Stack
-- React Native
-- Python Flask
-- MongoDB
+- Front End: React Native
+- Server: Python Flask
+- Database: MongoDB
