@@ -11,6 +11,7 @@
 ios/RNapi/AgoraRtcEngineKit.framework/AgoraRtcEngineKit
 ios/Pods/AgoraRtcEngine_iOS
 keys/
+package-lock.json
 
 ## Build generated
 build/
