@@ -4,9 +4,9 @@ import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
 // import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
+import HomeScreen from '../screens/ProfileScreen';
 import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import ChatScreen from '../screens/ChatScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -24,18 +24,18 @@ LinksStack.navigationOptions = {
   tabBarLabel: 'Explore',
 };
 
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
+const ChatStack = createStackNavigator({
+  Chat: ChatScreen,
 });
 
-SettingsStack.navigationOptions = {
+ChatStack.navigationOptions = {
   tabBarLabel: 'Chat',
 };
 
 const bottomNav = createMaterialBottomTabNavigator({
   HomeStack,
   LinksStack,
-  SettingsStack,
+  ChatStack,
 },
 {
   initialRouteName: 'LinksStack',

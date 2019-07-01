@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 
-export default function HomeScreen() {
+export default function ExploreScreen() {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -18,7 +18,7 @@ export default function HomeScreen() {
   );
 }
 
-HomeScreen.navigationOptions = {
+ExploreScreen.navigationOptions = {
   header: null,
 };
 
