@@ -5,7 +5,7 @@ import { createMaterialBottomTabNavigator } from "react-navigation-material-bott
 
 // import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/ProfileScreen';
-import LinksScreen from '../screens/LinksScreen';
+import ExploreScreen from '../screens/ExploreScreen';
 import ChatScreen from '../screens/ChatScreen';
 
 const HomeStack = createStackNavigator({
@@ -16,11 +16,11 @@ HomeStack.navigationOptions = {
   tabBarLabel: 'Profile',
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const ExploreStack = createStackNavigator({
+  Explore: ExploreScreen,
 });
 
-LinksStack.navigationOptions = {
+ExploreStack.navigationOptions = {
   tabBarLabel: 'Explore',
 };
 
@@ -34,11 +34,11 @@ ChatStack.navigationOptions = {
 
 const bottomNav = createMaterialBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  ExploreStack,
   ChatStack,
 },
 {
-  initialRouteName: 'LinksStack',
+  initialRouteName: 'ExploreStack',
   activeColor: '#5DBCD2',
   inactiveColor: 'white',
   barStyle: { backgroundColor: 'black' },
