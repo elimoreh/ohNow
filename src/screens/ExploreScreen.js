@@ -13,10 +13,10 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const users = [
-  {id: 1, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/ally.jpg'},
-  {id: 2, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/talia.jpg'},
-  {id: 3, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/tarin.jpg'},
-  {id: 4, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/jamie.jpg'}
+  {id: 1, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/ally.jpg', name:'Ally'},
+  {id: 2, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/talia.jpg', name:'Talia'},
+  {id: 3, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/tarin.jpg', name:'Tarin'},
+  {id: 4, uri: 'https://ohnowtest.s3-us-west-1.amazonaws.com/jamie.jpg', name:'Jamie'}
 ]
 
 
@@ -106,6 +106,9 @@ export default class ExploreScreen extends React.Component {
             <Animated.View style={{opacity: this.disLikeOpacity, position:'absolute', top: 50, right: 40, zIndex: 100}}>
               <Text style={{transform:[{rotate : '30deg'}],borderWidth: 1, borderColor:'red', color:'red', fontSize: 32, fontWeight:'800', padding: 10 }}>NEVER!</Text>
             </Animated.View>
+            <View style={{ position:'absolute', bottom: 20, left: 20, zIndex: 80}}>
+              <Text style={{color:'white', fontSize: 28, fontWeight:'800', padding: 10 }}>{user.name}</Text>
+            </View>
             <Image
               style={{flex:1, height: null, width: null, resizeMode: 'cover', borderRadius: 20}}
               source={{uri: user.uri}}
@@ -127,6 +130,9 @@ export default class ExploreScreen extends React.Component {
           <Animated.View style={{ opacity: 0, transform: [{ rotate: '30deg' }], position: 'absolute', top: 50, right: 40, zIndex: 1000 }}>
             <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>NEVER!</Text>
           </Animated.View>
+          <View style={{ position:'absolute', bottom: 20, left: 20, zIndex: 80}}>
+              <Text style={{color:'white', fontSize: 28, fontWeight:'800', padding: 10 }}>{user.name}</Text>
+          </View>
           <Image
             style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 20 }}
             source={{uri: user.uri}} />
@@ -139,13 +145,13 @@ export default class ExploreScreen extends React.Component {
   render (){
     return (
       <View style={{flex: 1}}>
-        <View style={{height:60}}>
+        <View style={{height:40}}>
           
         </View>
         <View style={{flex:1}}>
          {this.renderUsers(users)}
         </View>
-        <View style={{height:60}}>
+        <View style={{height:80}}>
          
         </View>
       </View>
