@@ -7,4 +7,4 @@ Projected Launch Date: <b> July 20th <b>
 ## Stack
 - Front-End: React Native & Objective C
 - Server: Python Flask
-- Database: MongoDB
+- Database: MongoDB & Firebase
