@@ -4,7 +4,7 @@ import { createStackNavigator } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
 // import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/ProfileScreen';
+import HomeScreen from '../screens/Profile/ProfileScreen';
 import ExploreScreen from '../screens/ExploreScreen';
 import ChatScreen from '../screens/ChatScreen';
 
