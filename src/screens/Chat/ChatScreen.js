@@ -26,7 +26,7 @@ var isSpeakerPhone = false;
 //provide this url if you want rtmp relevant features
 var cdn_url = "YOUR_CDN_URL"
 
-class ChatScreen extends Component {
+export default class ChatScreen extends Component {
   state = {
     localStream: null,
     remoteStreams: []
