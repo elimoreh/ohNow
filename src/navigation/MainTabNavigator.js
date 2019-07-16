@@ -5,8 +5,8 @@ import { createMaterialBottomTabNavigator } from "react-navigation-material-bott
 
 // import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/Profile/ProfileScreen';
-import ExploreScreen from '../screens/ExploreScreen';
-import ChatScreen from '../screens/ChatScreen';
+import ExploreScreen from '../screens/Explore/ExploreScreen';
+import ChatScreen from '../screens/Chat/ChatScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
