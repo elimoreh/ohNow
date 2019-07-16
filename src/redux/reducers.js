@@ -1,15 +1,15 @@
 import { combineReducers } from 'redux';
 
-const initialState = {
+const authState = {
     loggedIn: false,
     UserName: null,
     UserId: null,
 };
 
-const initialReducer = (state = initialState, action) => {
+const authReducer = (state = authState, action) => {
   switch (action.type) {
     case 'firstAction':
-      return Object.assign({}, state, { counter: action.payload });
+      return Object.assign({}, state, { loggedIn: action.payload });
     default:
       return state;
   }
@@ -17,7 +17,7 @@ const initialReducer = (state = initialState, action) => {
 
 
 const rootReducer = combineReducers({
-  initialReducer,
+  authReducer,
 });
 
 export default rootReducer;
